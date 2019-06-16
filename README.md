@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/Rob--W/cors-anywhere.svg?branch=master)](https://travis-ci.org/Rob--W/cors-anywhere)
-[![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
+
 
 **CORS Anywhere** is a NodeJS proxy which adds CORS headers to the proxied request.
 
@@ -11,6 +10,10 @@ This package does not put any restrictions on the http methods or headers, excep
 cookies. Requesting [user credentials](http://www.w3.org/TR/cors/#user-credentials) is disallowed.
 The app can be configured to require a header for proxying a request, for example to avoid
 a direct visit from the browser.
+
+## AV-Note
+
+This is a branch of cors-anywhere I made for the Timesheet-Buddy project. It adds a couple of headers to the cors-anywhere.js lib to allow making authenticated requests (in our case, so we could make cross-origin requests to the JIRA API)
 
 ## Example
 
